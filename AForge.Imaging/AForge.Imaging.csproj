@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E784F30D-2393-4BA9-9062-5434B2615CA2}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>AForge.Imaging</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Drawing" />
+    <Reference Include="AForge" />
+    <Reference Include="AForge.Math" />
+    <Reference Include="System" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="AForge\Imaging\ICornersDetector.cs" />
+    <Compile Include="AForge\Imaging\Filters\IFilter.cs" />
+    <Compile Include="AForge\Imaging\Filters\IFilterInformation.cs" />
+    <Compile Include="AForge\Imaging\Filters\BaseTransformationFilter.cs" />
+    <Compile Include="AForge\Imaging\Filters\Shrink.cs" />
+    <Compile Include="AForge\Imaging\Filters\BaseRotateFilter.cs" />
+    <Compile Include="AForge\Imaging\Filters\RotateNearestNeighbor.cs" />
+    <Compile Include="AForge\Imaging\Filters\IInPlaceFilter.cs" />
+    <Compile Include="AForge\Imaging\Filters\IInPlacePartialFilter.cs" />
+    <Compile Include="AForge\Imaging\Filters\BaseUsingCopyPartialFilter.cs" />
+    <Compile Include="AForge\Imaging\Filters\ConservativeSmoothing.cs" />
+    <Compile Include="AForge\Imaging\Filters\BaseInPlacePartialFilter.cs" />
+    <Compile Include="AForge\Imaging\Filters\RotateChannels.cs" />
+    <Compile Include="AForge\Imaging\Filters\GammaCorrection.cs" />
+    <Compile Include="AForge\Imaging\Filters\ErrorDiffusionDithering.cs" />
+    <Compile Include="AForge\Imaging\Filters\ErrorDiffusionToAdjacentNeighbors.cs" />
+    <Compile Include="AForge\Imaging\Filters\StuckiDithering.cs" />
+    <Compile Include="AForge\Imaging\Interpolation.cs" />
+    <Compile Include="AForge\Imaging\Filters\BinaryErosion3x3.cs" />
+    <Compile Include="AForge\Imaging\Filters\FilterIterator.cs" />
+    <Compile Include="AForge\Imaging\Filters\Threshold.cs" />
+    <Compile Include="AForge\Imaging\Filters\BaseInPlaceFilter.cs" />
+    <Compile Include="AForge\Imaging\Filters\BaseInPlaceFilter2.cs" />
+    <Compile Include="AForge\Imaging\Filters\Add.cs" />
+    <Compile Include="AForge\Imaging\ColorReduction\ErrorDiffusionColorDithering.cs" />
+    <Compile Include="AForge\Imaging\ColorReduction\ColorErrorDiffusionToAdjacentNeighbors.cs" />
+    <Compile Include="AForge\Imaging\ColorReduction\StuckiColorDithering.cs" />
+    <Compile Include="AForge\Imaging\ColorReduction\IColorQuantizer.cs" />
+    <Compile Include="AForge\Imaging\ColorReduction\FloydSteinbergColorDithering.cs" />
+    <Compile Include="AForge\Imaging\TemplateMatch.cs" />
+    <Compile Include="AForge\Imaging\SusanCornersDetector.cs" />
+    <Compile Include="AForge\Imaging\Filters\RotateBilinear.cs" />
+    <Compile Include="AForge\Imaging\Filters\BaseFilter.cs" />
+    <Compile Include="AForge\Imaging\Filters\WaterWave.cs" />
+    <Compile Include="AForge\Imaging\Filters\CornersMarker.cs" />
+    <Compile Include="AForge\Imaging\Filters\PointedMeanFloodFill.cs" />
+    <Compile Include="AForge\Imaging\Filters\ColorFiltering.cs" />
+    <Compile Include="AForge\Imaging\ColorReduction\JarvisJudiceNinkeColorDithering.cs" />
+    <Compile Include="AForge\Imaging\Filters\SimpleSkeletonization.cs" />
+    <Compile Include="AForge\Imaging\Filters\ConnectedComponentsLabeling.cs" />
+    <Compile Include="AForge\Imaging\Filters\Morph.cs" />
+    <Compile Include="AForge\Imaging\ComplexFilters\IComplexFilter.cs" />
+    <Compile Include="AForge\Imaging\ComplexFilters\FrequencyFilter.cs" />
+    <Compile Include="AForge\Imaging\Filters\BaseResizeFilter.cs" />
+    <Compile Include="AForge\Imaging\Filters\ResizeBicubic.cs" />
+    <Compile Include="AForge\Imaging\Filters\QuadrilateralTransformation.cs" />
+    <Compile Include="AForge\Imaging\Filters\SaturationCorrection.cs" />
+    <Compile Include="AForge\Imaging\Filters\BrightnessCorrection.cs" />
+    <Compile Include="AForge\Imaging\Filters\Convolution.cs" />
+    <Compile Include="AForge\Imaging\Filters\GrayscaleToRGB.cs" />
+    <Compile Include="AForge\Imaging\Filters\BradleyLocalThresholding.cs" />
+    <Compile Include="AForge\Imaging\IntegralImage.cs" />
+    <Compile Include="AForge\Imaging\ImageStatistics.cs" />
+    <Compile Include="AForge\Imaging\HorizontalIntensityStatistics.cs" />
+    <Compile Include="AForge\Imaging\Filters\QuadrilateralTransformationNearestNeighbor.cs" />
+    <Compile Include="AForge\Imaging\Filters\Median.cs" />
+    <Compile Include="AForge\Imaging\Filters\TexturedFilter.cs" />
+    <Compile Include="AForge\Imaging\Filters\TopHat.cs" />
+    <Compile Include="AForge\Imaging\Filters\DifferenceEdgeDetector.cs" />
+    <Compile Include="AForge\Imaging\Filters\Mean.cs" />
+    <Compile Include="AForge\Imaging\Filters\LevelsLinear.cs" />
+    <Compile Include="AForge\Imaging\Filters\SISThreshold.cs" />
+    <Compile Include="AForge\Imaging\Filters\Difference.cs" />
+    <Compile Include="AForge\Imaging\UnmanagedImage.cs" />
+    <Compile Include="AForge\Imaging\Textures\ITextureGenerator.cs" />
+    <Compile Include="AForge\Imaging\Textures\CloudsTexture.cs" />
+    <Compile Include="AForge\Imaging\QuadrilateralFinder.cs" />
+    <Compile Include="AForge\Imaging\IBlobsFilter.cs" />
+    <Compile Include="AForge\Imaging\HoughLine.cs" />
+    <Compile Include="AForge\Imaging\HoughLineTransformation.cs" />
+    <Compile Include="AForge\Imaging\Filters\SimpleQuadrilateralTransformation.cs" />
+    <Compile Include="AForge\Imaging\Filters\Texturer.cs" />
+    <Compile Include="AForge\Imaging\Filters\HSLLinear.cs" />
+    <Compile Include="AForge\Imaging\Filters\ContrastCorrection.cs" />
+    <Compile Include="AForge\Imaging\Filters\Blur.cs" />
+    <Compile Include="AForge\Imaging\Filters\SimplePosterization.cs" />
+    <Compile Include="AForge\Imaging\Filters\JarvisJudiceNinkeDithering.cs" />
+    <Compile Include="AForge\Imaging\ColorReduction\MedianCutQuantizer.cs" />
+    <Compile Include="AForge\Imaging\Textures\LabyrinthTexture.cs" />
+    <Compile Include="AForge\Imaging\ITemplateMatching.cs" />
+    <Compile Include="AForge\Imaging\Filters\YCbCrReplaceChannel.cs" />
+    <Compile Include="AForge\Imaging\Filters\AdaptiveSmoothing.cs" />
+    <Compile Include="AForge\Imaging\Filters\BlobsFiltering.cs" />
+    <Compile Include="AForge\Imaging\Filters\HitAndMiss.cs" />
+    <Compile Include="AForge\Imaging\Filters\HomogenityEdgeDetector.cs" />
+    <Compile Include="AForge\Imaging\Filters\GaussianSharpen.cs" />
+    <Compile Include="AForge\Imaging\Filters\Merge.cs" />
+    <Compile Include="AForge\Imaging\DocumentSkewChecker.cs" />
+    <Compile Include="AForge\Imaging\ColorReduction\MedianCutCube.cs" />
+    <Compile Include="AForge\Imaging\Textures\WoodTexture.cs" />
+    <Compile Include="AForge\Imaging\MemoryManager.cs" />
+    <Compile Include="AForge\Imaging\Filters\YCbCrExtractChannel.cs" />
+    <Compile Include="AForge\Imaging\Filters\ResizeNearestNeighbor.cs" />
+    <Compile Include="AForge\Imaging\Filters\Crop.cs" />
+    <Compile Include="AForge\Imaging\Filters\PointedColorFloodFill.cs" />
+    <Compile Include="AForge\Imaging\Filters\Erosion3x3.cs" />
+    <Compile Include="AForge\Imaging\Filters\FlatFieldCorrection.cs" />
+    <Compile Include="AForge\Imaging\Filters\HSLFiltering.cs" />
+    <Compile Include="AForge\Imaging\Filters\GaussianBlur.cs" />
+    <Compile Include="AForge\Imaging\Filters\Edges.cs" />
+    <Compile Include="AForge\Imaging\Filters\BaseFilter2.cs" />
+    <Compile Include="AForge\Imaging\Filters\OtsuThreshold.cs" />
+    <Compile Include="AForge\Imaging\Filters\IterativeThreshold.cs" />
+    <Compile Include="AForge\Imaging\Filters\ThresholdedEuclideanDifference.cs" />
+    <Compile Include="AForge\Imaging\Filters\Intersect.cs" />
+    <Compile Include="AForge\Imaging\ColorReduction\SierraColorDithering.cs" />
+    <Compile Include="AForge\Imaging\Textures\TextureTools.cs" />
+    <Compile Include="AForge\Imaging\Textures\TextileTexture.cs" />
+    <Compile Include="AForge\Imaging\BlobCounterBase.cs" />
+    <Compile Include="AForge\Imaging\RecursiveBlobCounter.cs" />
+    <Compile Include="AForge\Imaging\ImageStatisticsHSL.cs" />
+    <Compile Include="AForge\Imaging\Filters\FillHoles.cs" />
+    <Compile Include="AForge\Imaging\Filters\CanvasMove.cs" />
+    <Compile Include="AForge\Imaging\Filters\ReplaceChannel.cs" />
+    <Compile Include="AForge\Imaging\Filters\Grayscale.cs" />
+    <Compile Include="AForge\Imaging\Filters\GrayscaleRMY.cs" />
+    <Compile Include="AForge\Imaging\Filters\ThresholdWithCarry.cs" />
+    <Compile Include="AForge\Imaging\ColorReduction\BurkesColorDithering.cs" />
+    <Compile Include="AForge\Imaging\MoravecCornersDetector.cs" />
+    <Compile Include="AForge\Imaging\Filters\Mirror.cs" />
+    <Compile Include="AForge\Imaging\Filters\Jitter.cs" />
+    <Compile Include="AForge\Imaging\Filters\CanvasFill.cs" />
+    <Compile Include="AForge\Imaging\Filters\HistogramEqualization.cs" />
+    <Compile Include="AForge\Imaging\Filters\ExtractChannel.cs" />
+    <Compile Include="AForge\Imaging\Filters\FloydSteinbergDithering.cs" />
+    <Compile Include="AForge\Imaging\Image.cs" />
+    <Compile Include="AForge\Imaging\Filters\YCbCrLinear.cs" />
+    <Compile Include="AForge\Imaging\Filters\ResizeBilinear.cs" />
+    <Compile Include="AForge\Imaging\Filters\OilPainting.cs" />
+    <Compile Include="AForge\Imaging\Filters\ExtractNormalizedRGBChannel.cs" />
+    <Compile Include="AForge\Imaging\Filters\BinaryDilatation3x3.cs" />
+    <Compile Include="AForge\Imaging\Filters\SobelEdgeDetector.cs" />
+    <Compile Include="AForge\Imaging\Filters\Sharpen.cs" />
+    <Compile Include="AForge\Imaging\Filters\Sepia.cs" />
+    <Compile Include="AForge\Imaging\Filters\Invert.cs" />
+    <Compile Include="AForge\Imaging\Filters\EuclideanColorFiltering.cs" />
+    <Compile Include="AForge\Imaging\ExhaustiveTemplateMatching.cs" />
+    <Compile Include="AForge\Imaging\IBlockMatching.cs" />
+    <Compile Include="AForge\Imaging\ExhaustiveBlockMatching.cs" />
+    <Compile Include="AForge\Imaging\UnsupportedImageFormatException.cs" />
+    <Compile Include="AForge\Imaging\InvalidImagePropertiesException.cs" />
+    <Compile Include="AForge\Imaging\ComplexImage.cs" />
+    <Compile Include="AForge\Imaging\RGB.cs" />
+    <Compile Include="AForge\Imaging\HSL.cs" />
+    <Compile Include="AForge\Imaging\YCbCr.cs" />
+    <Compile Include="AForge\Imaging\BlockMatch.cs" />
+    <Compile Include="AForge\Imaging\Blob.cs" />
+    <Compile Include="AForge\Imaging\HoughCircle.cs" />
+    <Compile Include="AForge\Imaging\HoughCircleTransformation.cs" />
+    <Compile Include="AForge\Imaging\Filters\QuadrilateralTransformationBilinear.cs" />
+    <Compile Include="AForge\Imaging\Filters\QuadTransformationCalcs.cs" />
+    <Compile Include="AForge\Imaging\Filters\BackwardQuadrilateralTransformation.cs" />
+    <Compile Include="AForge\Imaging\Filters\ImageWarp.cs" />
+    <Compile Include="AForge\Imaging\Filters\ExtractBiggestBlob.cs" />
+    <Compile Include="AForge\Imaging\Filters\Dilatation3x3.cs" />
+    <Compile Include="AForge\Imaging\Filters\GrayscaleBT709.cs" />
+    <Compile Include="AForge\Imaging\ObjectsOrder.cs" />
+    <Compile Include="AForge\Imaging\BlobCounter.cs" />
+    <Compile Include="AForge\Imaging\ImageStatisticsYCbCr.cs" />
+    <Compile Include="AForge\Imaging\Filters\YCbCrFiltering.cs" />
+    <Compile Include="AForge\Imaging\Filters\Opening.cs" />
+    <Compile Include="AForge\Imaging\Filters\Dilatation.cs" />
+    <Compile Include="AForge\Imaging\Filters\FiltersSequence.cs" />
+    <Compile Include="AForge\Imaging\Textures\MarbleTexture.cs" />
+    <Compile Include="AForge\Imaging\Filters\RotateBicubic.cs" />
+    <Compile Include="AForge\Imaging\Filters\SaltAndPepperNoise.cs" />
+    <Compile Include="AForge\Imaging\Filters\AdditiveNoise.cs" />
+    <Compile Include="AForge\Imaging\Filters\Closing.cs" />
+    <Compile Include="AForge\Imaging\Filters\HueModifier.cs" />
+    <Compile Include="AForge\Imaging\Filters\ColorRemapping.cs" />
+    <Compile Include="AForge\Imaging\Filters\OrderedDithering.cs" />
+    <Compile Include="AForge\Imaging\Filters\BayerDithering.cs" />
+    <Compile Include="AForge\Imaging\VerticalIntensityStatistics.cs" />
+    <Compile Include="AForge\Imaging\Filters\TexturedMerge.cs" />
+    <Compile Include="AForge\Imaging\Filters\CanvasCrop.cs" />
+    <Compile Include="AForge\Imaging\Filters\Erosion.cs" />
+    <Compile Include="AForge\Imaging\Filters\BottomHat.cs" />
+    <Compile Include="AForge\Imaging\Filters\GrayscaleY.cs" />
+    <Compile Include="AForge\Imaging\Filters\ContrastStretch.cs" />
+    <Compile Include="AForge\Imaging\Filters\ChannelFiltering.cs" />
+    <Compile Include="AForge\Imaging\Filters\MoveTowards.cs" />
+    <Compile Include="AForge\Imaging\Drawing.cs" />
+    <Compile Include="AForge\Imaging\ColorReduction\ColorImageQuantizer.cs" />
+    <Compile Include="AForge\Imaging\Filters\Pixellate.cs" />
+    <Compile Include="AForge\Imaging\Filters\CannyEdgeDetector.cs" />
+    <Compile Include="AForge\Imaging\Filters\LevelsLinear16bpp.cs" />
+    <Compile Include="AForge\Imaging\Filters\SierraDithering.cs" />
+    <Compile Include="AForge\Imaging\Filters\BurkesDithering.cs" />
+    <Compile Include="AForge\Imaging\Filters\ThresholdedDifference.cs" />
+    <Compile Include="AForge\Imaging\Filters\Subtract.cs" />
+    <Compile Include="AForge\Imaging\Filters\StereoAnaglyph.cs" />
+  </ItemGroup>
+</Project>

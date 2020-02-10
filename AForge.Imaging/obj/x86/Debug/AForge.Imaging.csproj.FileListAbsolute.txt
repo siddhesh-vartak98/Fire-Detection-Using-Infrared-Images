@@ -1,0 +1,2 @@
+D:\Fire Project\Deployment fire poject\Fire Project Deployed\fire detected\AForge.Imaging\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Fire Project Deployed\fire detected\AForge.Imaging\obj\x86\Debug\ResolveAssemblyReference.cache
