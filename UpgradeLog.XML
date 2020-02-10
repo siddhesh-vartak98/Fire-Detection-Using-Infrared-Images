@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="cam_aforge1">
+</Property><Property Name="Solution File" Value="C:\Users\Pratik Narayan\Desktop\cam_aforge1_\cam_aforge1.sln">
+</Property><Property Name="Date" Value="Friday, April 15, 2011">
+</Property><Property Name="Time" Value="10:15:45 AM">
+</Property></Properties><Event ErrorLevel="0" Project="cam_aforge1" Source="cam_aforge1.csproj" Description="Project file successfully backed up as C:\Users\Pratik Narayan\Desktop\cam_aforge1_\Backup\cam_aforge1.csproj">
+</Event><Event ErrorLevel="0" Project="cam_aforge1" Source="Form1.cs" Description="File successfully backed up as C:\Users\Pratik Narayan\Desktop\cam_aforge1_\Backup\Form1.cs">
+</Event><Event ErrorLevel="0" Project="cam_aforge1" Source="Form1.Designer.cs" Description="File successfully backed up as C:\Users\Pratik Narayan\Desktop\cam_aforge1_\Backup\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="cam_aforge1" Source="Program.cs" Description="File successfully backed up as C:\Users\Pratik Narayan\Desktop\cam_aforge1_\Backup\Program.cs">
+</Event><Event ErrorLevel="0" Project="cam_aforge1" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\Pratik Narayan\Desktop\cam_aforge1_\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="cam_aforge1" Source="Properties\Resources.Designer.cs" Description="File successfully backed up as C:\Users\Pratik Narayan\Desktop\cam_aforge1_\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="cam_aforge1" Source="Properties\Settings.Designer.cs" Description="File successfully backed up as C:\Users\Pratik Narayan\Desktop\cam_aforge1_\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="cam_aforge1" Source="Properties\Settings.settings" Description="File successfully backed up as C:\Users\Pratik Narayan\Desktop\cam_aforge1_\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="cam_aforge1" Source="Form1.resx" Description="File successfully backed up as C:\Users\Pratik Narayan\Desktop\cam_aforge1_\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="cam_aforge1" Source="Properties\Resources.resx" Description="File successfully backed up as C:\Users\Pratik Narayan\Desktop\cam_aforge1_\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="cam_aforge1" Source="cam_aforge1.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="cam_aforge1" Source="cam_aforge1.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="cam_aforge1" Source="cam_aforge1.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
