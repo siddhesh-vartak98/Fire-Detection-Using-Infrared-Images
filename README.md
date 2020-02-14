@@ -5,3 +5,4 @@ Second method is input IR video but it must be in .wmv format.
 In both method if fire detected then a message and sound is generated. 
 Project stat in Microsoft visual studio 2013. The code starts via "cam_aforge1.csproj" file.
 
+Note:File to be extreted.(aforge.imaafing->aforge->imaging->filter.zip)
