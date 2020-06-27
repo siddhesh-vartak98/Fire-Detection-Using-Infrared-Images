@@ -1,8 +1,13 @@
 # Fire-Detection-Using-Infrared-Images
-Fire detection system has been developed using image processing technique which detect fire using camera in real time environment.  In this project, two method in GUI for input. 
-First is video surveillance camera is recording real time video. (AForge a library has to be install for connect external camera in code.) The software application is getting the video and then segment into images. These images then filter, colours detect and motion detection gets high accuracy to detect fire. The project coded in AForge.net framework libraries. 
-Second method is input IR video but it must be in .wmv format. 
-In both method if fire detected then a message and sound is generated. 
-Project stat in Microsoft visual studio 2013. The code starts via "cam_aforge1.csproj" file.
+## How to start: open file "cam_aforge1.csproj" in visual studio. 
+### Note: File to be excreted.(aforge.imaafing->aforge->imaging->filter.zip)
 
-Note:File to be extreted.(aforge.imaafing->aforge->imaging->filter.zip)
+The project is fire detection using the infrared technologies. We use  aforge library of image processing technology . The software application is getting the input video and then segment into images. After that these images then filter, colours detection of fire on infrared based include flame of fire detect , motion detection gets high accuracy to detect whether the fire is present or not. In both method if fire detected then an alert message and sound is generated. 
+
+The project has two input method through GUI. 
+1. Real time (camera)
+ - The real time system , extracts frames from camera or video recording device in every 2 seconds, it provides continuous monitoring. And send to system. 
+ -Note : If you have to connect external camera device then Aforge library code has to install. 
+ 2. Store ir video 
+  - we have given input IR video but it must be in .wmv format. 
+ Future Scope: GSM can be conneted. 
