@@ -10,4 +10,3 @@ The project has two input method through GUI.
  -Note : If you have to connect external camera device then Aforge library code has to install. 
  2. Store ir video 
   - we have given input IR video but it must be in .wmv format. 
- Future Scope: GSM can be conneted. 
